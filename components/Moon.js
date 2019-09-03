@@ -6,7 +6,7 @@ export default class Moon extends PureComponent {
   render() {
     return (
       <Entity source={{gltf2: asset('moon/scene.gltf')}} style={{transform:[
-          {translate: [30, 0, -35]},
+          {translate: [30, 15, -35]},
           {scaleX: 1 },
           { scaleY: 1},
           { scaleZ: 1}

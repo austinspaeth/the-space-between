@@ -10,6 +10,7 @@ function init(bundle, parent, options = {}) {
 	frame: () => {
 		const cameraQuat = r360.getCameraQuaternion();
 		textPanel.recenter(cameraQuat, 'all'); 
+		
 	},
     fullScreen: true,
     ...options,
@@ -18,11 +19,20 @@ function init(bundle, parent, options = {}) {
 
 
 
-  // Render your app content to the default cylinder surface
-const textPanel = new Surface(1000, 600, Surface.SurfaceShape.Flat);
-const sunPanel = new Surface(1000, 600, Surface.SurfaceShape.Flat);
-const moonLocation = new Location([0,0,0])
+	// Render your app content to the default cylinder surface
+	const textPanel = new Surface(1000, 600, Surface.SurfaceShape.Flat);
 
+	const sunPanel = new Location([-800,500,600]);
+	const moonLocation = new Location([0,0,0]);
+
+	const moonLabelPanel = new Surface(300, 100, Surface.SurfaceShape.Flat);
+	moonLabelPanel.setAngle(4.045, -59.972,3);
+
+	const earthLabelPanel = new Surface(600, 600, Surface.SurfaceShape.Flat);
+	earthLabelPanel.setAngle(.86, -59.692,3.15);
+
+	const sunLabelPanel = new Surface(600, 600, Surface.SurfaceShape.Flat);
+	sunLabelPanel.setAngle(.54, -59.692,3.15);
 
   r360.renderToLocation(
     r360.createRoot('Moon'),
@@ -31,7 +41,6 @@ const moonLocation = new Location([0,0,0])
  
 
 
-sunPanel.renderToLocation([-100,0,0])
 
 
    r360.renderToLocation(
@@ -59,6 +68,24 @@ sunPanel.renderToLocation([-100,0,0])
   );
 
   r360.renderToSurface(
+    r360.createRoot('MoonLabel'),
+    moonLabelPanel
+  );
+
+  r360.renderToSurface(
+    r360.createRoot('EarthLabel'),
+    earthLabelPanel
+  );
+
+  r360.renderToSurface(
+    r360.createRoot('SunLabel'),
+    sunLabelPanel
+  );
+
+
+
+
+    r360.renderToLocation(
     r360.createRoot('Sun'),
 	sunPanel
   );

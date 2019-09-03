@@ -9,9 +9,9 @@ export default class MoonLight extends PureComponent {
     return (
 		<DirectionalLight style={{transform:[
           {rotateX: '90deg' },
-          { rotateY: '-45deg'},
+          { rotateY: '-20deg'},
           { rotateZ: '0deg'}
-        ]}}  intensity={1.25}/>
+        ]}}  intensity={2.5}/>
     );
   }
 }

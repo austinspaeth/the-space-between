@@ -9,13 +9,13 @@ export default class Sun extends React.Component {
         style={{
 			display:'flex',
 			justifyContent:'center',
-			backgroundColor:'blue',
 			alignItems:'center',
-			width:1000,
-			height:600,
-            transform: [{translate: [-120, 0, -220]}],
+			alignItems:'center',
+            transform: [ {scaleX: .05 },
+				{ scaleY:.05},
+				{ scaleZ:.05},{translate: [0,0 , 0]}],
         }}>
-		<Image style={{width:800,  transform: [{translate: [0, 0, 0]}], height:800}} source={asset('sun/sun.png')} />
+		<Image style={{width:1000,  transform: [{translate: [0, 0, 0]}], height:1000}} source={asset('sun/sun.png')} />
       </View>
     );
   }
