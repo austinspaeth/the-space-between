@@ -2,9 +2,14 @@
 // If you want to modify your application's content, start in "index.js"
 
 import {ReactInstance, Surface, Location} from 'react-360-web';
+import * as THREE from 'three'
+
+import * as OVRUI from 'ovrui';
+import ControllerRayCaster from 'react-vr-controller-raycaster';
 
 
 function init(bundle, parent, options = {}) {
+	const scene = new THREE.Scene();
   const r360 = new ReactInstance(bundle, parent, {
     
 	frame: () => {
@@ -12,6 +17,15 @@ function init(bundle, parent, options = {}) {
 		textPanel.recenter(cameraQuat, 'all'); 
 		
 	},
+
+	raycasters: [
+		new ControllerRayCaster({scene, color: '#ffffff'}),
+		new OVRUI.MouseRayCaster(),
+	  ],
+  
+	  scene: scene,
+	  cursorVisibility: 'visible',
+
     fullScreen: true,
     ...options,
   });
