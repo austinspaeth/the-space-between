@@ -4653,6 +4653,13 @@ osenv@^0.1.4:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
 
+ovrui@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/ovrui/-/ovrui-1.4.1.tgz#e42163d1616a4d77e60af5513200236ee3ec9785"
+  integrity sha512-a2Pk4Og40YlH5Ulkn3xkq4YnpSC8fhDN9iVMvxxBdfk9Aw7qcU3GxdJGSH9rSAsek9xNozzWwqqjU2iO3l3UCQ==
+  dependencies:
+    three "^0.80.1"
+
 p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
@@ -5162,6 +5169,11 @@ react-transform-hmr@^1.0.4:
   dependencies:
     global "^4.3.0"
     react-proxy "^1.1.7"
+
+react-vr-controller-raycaster@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-vr-controller-raycaster/-/react-vr-controller-raycaster-1.1.1.tgz#2aaee84007299fa2eb48d478100b20adbd78b325"
+  integrity sha512-W9s4XaWK7HR0R2cvgxuKlSBj31itvVms2K79RHPfoxNUYslnzuUR+OWw2CVTBoq17zCR6Ljaut3g+8G6Ha5FDw==
 
 react@16.3.2:
   version "16.3.2"
@@ -5948,10 +5960,15 @@ three-gltf2-loader@~1.2.0:
   resolved "https://registry.yarnpkg.com/three-gltf2-loader/-/three-gltf2-loader-1.2.0.tgz#1fffae0659b1490034e6d055c7aabc439ab5de21"
   integrity sha512-CFB9wcKTBpADh6wVq32XYx81LyNS7j8e8edgdMEBLedz+Wle1Ytbh8h6qEa4XFLR4dFArVmwC244EQOyXUYfqA==
 
-three@^0.87.0:
+three@^0.80.1:
+  version "0.80.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.80.1.tgz#05f6d6710e5ec7b59a4e8a4be0897920516ebf6f"
+  integrity sha512-jNqrn/j2PNAs49+oWiJks6mz16x07eUr27k1RSfYwHQ/vs4kazCGVXA8ZGLCkBBfmDig6awZFffjj7YX/BBj9w==
+
+three@^0.87.1:
   version "0.87.1"
   resolved "https://registry.yarnpkg.com/three/-/three-0.87.1.tgz#466a34edc4543459ced9b9d7d276b65216fe2ba8"
-  integrity sha1-Rmo07cRUNFnO2bnX0na2Uhb+K6g=
+  integrity sha512-ZwMODnlSi4CRAa4snN6R4FlxUCxlRHkUmCcAgqf0N2L6OGbnIsXPfqpvDyqWzoyqSCKfhjXWWp6tTSXOKwV+XA==
 
 throat@^3.0.0:
   version "3.2.0"
@@ -6112,9 +6129,9 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 ua-parser-js@^0.7.18:
-  version "0.7.20"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
-  integrity sha512-8OaIKfzL5cpx8eCMAhhvTlft8GYF8b2eQr6JkCyVdrgjcytyOmPCXrqXFcUnhonRpLlh5yxEZVohm6mzaowUOw==
+  version "0.7.33"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.33.tgz#1d04acb4ccef9293df6f70f2c3d22f3030d8b532"
+  integrity sha512-s8ax/CeZdK9R/56Sui0WM6y9OFREJarMRHqLB2EwkovemBxNQ+Bqu8GAsUnVcXKgphb++ghr/B2BZx4mahujPw==
 
 uglify-es@^3.1.9:
   version "3.3.9"
